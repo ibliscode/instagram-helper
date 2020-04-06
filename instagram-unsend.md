@@ -7,7 +7,7 @@
 5. Press Reload (`Ctrl + R`)
 6. Open any chat and then see the link should be such as (https://www.instagram.com/direct/t/xxxx)
 7. Now Copy the `InstagramHelper.js` file contents and paste it in `Console` tab
-8. Run the followin code
+8. Run the following code
 
 ```javascript
 
@@ -20,7 +20,7 @@ igHelper.METHOD_NAME();
 
 ```javascript
 
-/**
+    /**
      * Fetch the messages and its itemIds for fetching from currentPageIndex to maxPageIndex
      * @param {number} currentPageIndex starting page index to start fetching (default 0)
      * @param {number} maxPageIndex last page till which all the messages will be fetched (default 5)
@@ -29,10 +29,10 @@ igHelper.METHOD_NAME();
     getMessagesItemsArray(currentPageIndex, maxPageIndex, isAllMessages)
 
 ```
-10. Call `ig.getMessagesItemsArray(0, 5, false);` to get 5 scroll pages messages.
-> If you want to delete all the messages since the chat begin then call `ig.getMessagesItemsArray(0, 5, true);`
+10. Call `igHelper.getMessagesItemsArray(0, 5, false);` to get 5 scroll pages messages.
+> If you want to delete all the messages since the chat begin then call `igHelper.getMessagesItemsArray(0, 5, true);`
 
-12. Now call `ig.deleteAllMessages(0);` to start deleting.
+12. Now call `igHelper.deleteAllMessages(0);` to start deleting.
 
 > [Video Demo](./assets/instagram_delete_unsend_messages.gif)
 
